@@ -1,0 +1,120 @@
+/* Main Wrapper (Background) */
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFF0F5; /* Soft pink background */
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Drum Machine Container */
+#whole-machine {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFE4E1; /* Rose quartz pink */
+  width: 60%;
+  max-width: 700px;
+  min-width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons Grid */
+#buttons-container {
+  width: 60%;
+  padding: 10px;
+}
+
+/* Drum Pad Buttons (Pastel Colors) */
+.drum-pad {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px; /* Rounded corners */
+  color: #5D3A3A; /* Darker text for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Button Colors */
+#q-button { background-color: #FFD1DC; } /* Pastel pink */
+#w-button { background-color: #B5EAD7; } /* Mint green */
+#e-button { background-color: #C7CEEA; } /* Lavender */
+#a-button { background-color: #E2F0CB; } /* Pale lime */
+#s-button { background-color: #FFDAC1; } /* Peach */
+#d-button { background-color: #B5EAD7; } /* Mint green */
+#z-button { background-color: #C7CEEA; } /* Lavender */
+#x-button { background-color: #FFD1DC; } /* Pastel pink */
+#c-button { background-color: #E2F0CB; } /* Pale lime */
+
+/* Button Hover/Active Effects */
+.drum-pad:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.drum-pad:active, .drum-pad.active {
+  transform: scale(0.98);
+  background-color: #FF9AA2; /* Slightly darker pink when pressed */
+}
+
+/* Control Panel */
+#control-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  background-color: #F8C8DC; /* Light pink */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Power Button */
+#power-btn {
+  margin-top: 10px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: #FF9AA2; /* Coral pink */
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#power-btn:hover {
+  background-color: #FF7B8B; /* Slightly darker on hover */
+}
+
+/* Volume Slider */
+.input-control {
+  width: 80%;
+  margin: 15px 0;
+  accent-color: #FF9AA2; /* Makes slider match the theme */
+}
+
+/* Display Text */
+#display {
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 50px;
+  border-radius: 8px;
+  padding: 0 15px;
+  color: #5D3A3A; /* Darker text for readability */
+  font-family: 'Arial', sans-serif;
+}
